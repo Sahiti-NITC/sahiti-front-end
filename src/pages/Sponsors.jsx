@@ -6,6 +6,8 @@ import Gallery from "../components/Gallery/Gallery";
 import LeftArchBorder from '../components/Common/LeftArchBorder'
 import RightArchBorder from '../components/Common/RightArchBorder'
 
+
+
 const Sponsors = () => {
 	return (
 		<div className="bg-[#FF8343] p-0 m-0 relative overflow-clip h-max">

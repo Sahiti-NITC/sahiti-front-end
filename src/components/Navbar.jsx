@@ -6,6 +6,9 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
+
+	const ref1 = React.useRef(null);
+
 	const scrollToSection = (id) => {
 		const target = document.getElementById(id);
 		if (target) {
@@ -17,8 +20,23 @@ const Navbar = () => {
 		}
 	};
 
+	gsap.fromTo(
+		ref1.current,
+		{
+			opacity: 0.6,
+			y: -400,
+		},
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			delay: 0.5,
+			ease: "power4.out"
+		}
+	)
+
 	return (
-		<div className="navbar font-poppins text-[#FFEFD5] mt-4">
+		<div ref={ref1} className="navbar font-poppins text-[#FFEFD5] mt-4">
 
 			<div className="navbar-start">
 				<div className="dropdown">
