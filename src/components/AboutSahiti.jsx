@@ -3,17 +3,16 @@ import Button from "./Common/BiggerButton";
 
 const AboutSahiti = () => {
 	return (
-		<div className="flex flex-col justify-center items-center w-full px-4 md:px-8 lg:px-16 my-16 lg:my-10 medHeight:my-8 ">
+		<div className="flex min-h-screen flex-col justify-center items-center w-full px-4 md:px-8 lg:px-16 my-16 lg:my-10 medHeight:my-8 ">
 			{/* Logo Image */}
 			<img
-				className="w-[40vw] ipadAir:w-[40vw] ipadPro:w-[30vw] smallHeight:w-[40vw] md:w-[40vw] lg:w-[20vw] h-auto"
-				// className="w-[40vw] ipadAir:w-[35vw] smallHeight:w-[40vw] md:w-[25vw] lg:w-[20vw] h-auto"
+				className="lg:w-[300px] w-[200px] h-auto"
 				src="/logos/logo-orange.png"
 				// src="/logos/lnd-orange.jpg"
 				alt="Sahiti Logo"
 			/>
 
-			<div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-x-4 md:space-y-0 mt-6">
+			<div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-x-4 md:space-y-0 mt-6 w-max">
 				<Button
 					link="/brochures/Sahiti-Brochure.pdf"
 					bgColor="#FF8343"

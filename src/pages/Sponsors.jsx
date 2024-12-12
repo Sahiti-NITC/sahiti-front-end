@@ -35,7 +35,7 @@ const Sponsors = () => {
 					textColor="#FF8343"
 					isPDF={true}
 				>
-					Marketing Brochure
+					Marketing_Brochure
 				</Button>
 
 				<h2 className="text-white text-3xl font-bold mt-8 text-left">

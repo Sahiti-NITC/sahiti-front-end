@@ -10,60 +10,30 @@ import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
 	return (
-		<div className="bg-[#feefd7]">
-			<div
-				id="about"
-				className="h-screen bg-no-repeat bg-cover bg-[center_top_98%]
-      bg-[url('/bg/Hero-Mobile.svg')] 
-      sm:bg-[url('/bg/Hero-Tablet.svg')] 
-      lg:bg-[url('/bg/Hero-Desktop.svg')]
-      flex flex-col items-center px-2 md:px-8 lg:px-16 overflow-hidden"
-			>
-				<Navbar />
+		<div className="w-screen min-h-screen bg-[#FF8343] overflow-clip">
+			<div id="about" className=" w-full min-h-screen relative overflow-clip" >
 				<MainContent />
 			</div>
-			<div
-				id="about"
-				className="bg-no-repeat bg-cover bg-[center_top_0%]
-   bg-[url('/bg/Date-Mobile.svg')] 
-      sm:bg-[url('/bg/Date-Tablet.svg')] 
-      lg:bg-[url('/bg/Date.svg')]    
-      flex flex-col items-center px-8 lg:px-16 overflow-hidden"
-			>
+
+			<div id="about" className="relative flex flex-col items-center w-full h-screen overflow-clip" >
+			<img src="/illustrations/Lace1.svg" alt="" srcset="" className=" absolute right-0 top-0 rotate-180 " />
+
 				<Dates />
+				
 			</div>
-			<div className="overflow-hidden">
-				{" "}
-				<Divider2 />
-			</div>
-			<div
-				id="about"
-				className="ipadPro:h-[85vh] h-screen lg:h-auto bg-no-repeat bg-cover bg-[center_top_100%]
-   bg-[url('/bg/AboutSahiti-Mobile.svg')] 
-      sm:bg-[url('/bg/AboutSahiti-Tablet.svg')] 
-      lg:bg-[url('/bg/AboutSahiti.svg')]    
-      flex flex-col items-center px-8 lg:px-16 overflow-hidden"
-			>
+
+			
+
+			<div id="about" className=" flex flex-col items-center w-full min-h-screen bg-white" >
 				<AboutSahiti />
 			</div>
 
-			<div
-				id="debate"
-				className="ipadPro:h-[85vh] h-screen lg:h-auto bg-no-repeat bg-cover bg-[center_top_0%]
-      bg-[url('/bg/Debate-Mobile.svg')] 
-    sm:bg-[url('/bg/Debate-Tablet.svg')] 
-      lg:bg-[url('/bg/Debate.svg')]  
-      flex flex-col items-center px-8 lg:px-16 overflow-hidden"
-			>
-				{" "}
+			<div id="debate" className=" flex flex-col items-center w-full min-h-screen bg-[#feefd7]"	>
 				<Debate />
 			</div>
 			<Divider />
 
-			<div
-				id="gallery"
-				className="w-[95%] min-h-screen bg-[#feefd7] flex justify-center p-4 mx-auto"
-			>
+			<div id="gallery" className="w-[95%] min-h-screen bg-[#feefd7] flex justify-center p-4 mx-auto" >
 				<div className="h-[80%] my-2">
 					<Gallery />
 				</div>
